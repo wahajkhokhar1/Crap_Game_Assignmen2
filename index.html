@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Craps Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h1>Developed by:</h1>
+        <p>Wahaj Tahir 3972-FBAS/BSCS/F18(B)</p>
+        <p>Muhammad Asim 3956-FBAS/BSCS/F18(B)</p>
+      </div>
+
+      <div style="text-align: center">
+        <h1 class="title">Craps Game</h1>
+      </div>
+      <br />
+      <div class="dice">
+        <img class="img1" src="images/roll.png" alt="Image Not Found" />
+      </div>
+      <div class="dice">
+        <img class="img2" src="images/dice.png" alt="Image Not Found" />
+      </div>
+      <div id="result">
+        <p class="result_paragraph">
+          SUM :
+          <input class="total" id="sumfield" type="text" disabled value="0" />
+        </p>
+        <p class="result_paragraph">
+          Point :
+          <input class="total" id="pointfield" type="text" disabled value="0" />
+        </p>
+
+        <p id="status" class="red">Click the Roll Dice button to play</p>
+        <input
+          type="button"
+          id="rollButton"
+          value="Roll Dice"
+          onclick="play()"
+        />
+      </div>
+    </div>
+
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
